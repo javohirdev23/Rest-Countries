@@ -8,7 +8,7 @@ function updateUi(arr) {
     let { name, population, region, capital, flag } = item;
 
     ulEl.innerHTML += `
-          <li class="country" data-id="${item.id}">
+          <li class="country" >
           <img src="${flag || name}" alt="${name}" />
           <div class="country__intro">
             <h4 class="name">${name}</h4>
@@ -21,3 +21,4 @@ function updateUi(arr) {
 }
  updateUi(countries);
 export default updateUi
+
